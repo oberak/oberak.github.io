@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo Basic Usage | OBERK, IT Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Write a Post1$ hexo new [layout] &amp;lt;title&amp;gt;  layout  post : /source/_post/ default value. Can change value using default_layout of _config.yml you can show draft posts in local using hexo server –d">
+<meta name="keywords" content="Blog,Hexo,Node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Basic Usage">
+<meta property="og:url" content="http://oberak.github.io/2019/03/05/hexo-basic-usage/index.html">
+<meta property="og:site_name" content="OBERK, IT Blog">
+<meta property="og:description" content="Write a Post1$ hexo new [layout] &amp;lt;title&amp;gt;  layout  post : /source/_post/ default value. Can change value using default_layout of _config.yml you can show draft posts in local using hexo server –d">
+<meta property="og:locale" content="en, kr">
+<meta property="og:updated_time" content="2019-03-05T05:04:06.379Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo Basic Usage">
+<meta name="twitter:description" content="Write a Post1$ hexo new [layout] &amp;lt;title&amp;gt;  layout  post : /source/_post/ default value. Can change value using default_layout of _config.yml you can show draft posts in local using hexo server –d">
+  
+    <link rel="alternate" href="/atom.xml" title="OBERK, IT Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">OBERK, IT Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Won Kilho&#39;s IT Blog for Programming</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://oberak.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo-basic-usage" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/05/hexo-basic-usage/" class="article-date">
+  <time datetime="2019-03-05T01:54:59.000Z" itemprop="datePublished">2019-03-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">Hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo Basic Usage
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Write-a-Post"><a href="#Write-a-Post" class="headerlink" title="Write a Post"></a>Write a Post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>layout</p>
+<ul>
+<li>post : /source/_post/<ul>
+<li>default value. Can change value using default_layout of _config.yml</li>
+<li>you can show draft posts in local using <code>hexo server –draft</code></li>
+</ul>
+</li>
+<li>page : /source/</li>
+<li>draft : /source/_drafts/ # Not displayed.</li>
+</ul>
+</li>
+<li><p>title</p>
+<ul>
+<li>Convert to url of post</li>
+<li>Use keyword of post for SEO(Search Engine Optimization)</li>
+</ul>
+</li>
+</ul>
+<h5 id="Setup-for-writing"><a href="#Setup-for-writing" class="headerlink" title="Setup for writing"></a>Setup for writing</h5><ul>
+<li><p>Modify config</p>
+<figure class="highlight markdown"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Writing</span></span><br><span class="line">new<span class="emphasis">_post_</span>name: :year:month:day-:title.md</span><br><span class="line">default_layout: draft</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Publishes a draft</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Scaffolds-default-layout"><a href="#Scaffolds-default-layout" class="headerlink" title="Scaffolds - default layout"></a>Scaffolds - default layout</h2><ul>
+<li><p>Modify scaffolds</p>
+<figure class="highlight markdown"><figcaption><span>/scaffolds/post.md,draft.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">thumbnail:</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">### Related Posts</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Use categories</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - Programming # main category</span><br><span class="line">  - Node        # sub category</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Use tags</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - Node.js</span><br><span class="line">  - Java Servlet</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Hexo-Tag-Plugins"><a href="#Hexo-Tag-Plugins" class="headerlink" title="Hexo Tag Plugins"></a>Hexo Tag Plugins</h2><p>Refer to <a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="noopener">Tag Plugins</a></p>
+<h2 id="Assert-Folders"><a href="#Assert-Folders" class="headerlink" title="Assert Folders"></a>Assert Folders</h2><ul>
+<li>Global Assert Folders<ul>
+<li>under <code>/source/</code> folder<ul>
+<li>For example <code>/source/images/logo.png</code>, you can access <code>/images/logo.png</code> in any posts.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Post Assert Folders</p>
+<ul>
+<li><p>Make asset folder using post filename</p>
+<figure class="highlight markdown"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Writing</span></span><br><span class="line">post<span class="emphasis">_asset_</span>folder: true</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>You can use only filename in markdown file using <a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="noopener">Tag Plugins</a></p>
+<figure class="highlight markdown"><figcaption><span>sample.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img sample.png Sample image %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
+<li><a href="https://futurecreator.github.io/2016/06/21/hexo-basic-usage/" target="_blank" rel="noopener">Hexo Basic Usage</a></li>
+<li><a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="noopener">Tag Plugins</a></li>
+</ul>
+<h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oberak.github.io/2019/03/05/hexo-basic-usage/" data-id="cjsvdu3h10004y2s23v3abgfa" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">Node.js</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/03/05/setting-vscode-for-hexo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Setting VSCode for Hexo
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/03/05/create-a-blog-site-using-hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Create a Blog site using Hexo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/">VSCode</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/blog/" style="font-size: 15px;">Blog</a> <a href="/tags/hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/vscode/" style="font-size: 10px;">VSCode</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/05/setting-vscode-for-hexo/">Setting VSCode for Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/05/hexo-basic-usage/">Hexo Basic Usage</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/05/create-a-blog-site-using-hexo/">Create a Blog site using Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Won Kilho<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

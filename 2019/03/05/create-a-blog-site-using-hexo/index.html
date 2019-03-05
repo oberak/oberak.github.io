@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Create a Blog site using Hexo | OBERK, IT Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="0. Prerequisite Install Node.js Install Yarn (Optional) Install VSCode or Other Markdown Editor Knowledge of Markdown   1. Install hexo-cli1$ yarn global add hexo-cli # sudo npm i -g hexo-cli 2. Creat">
+<meta name="keywords" content="Blog,Hexo,Node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Create a Blog site using Hexo">
+<meta property="og:url" content="http://oberak.github.io/2019/03/05/create-a-blog-site-using-hexo/index.html">
+<meta property="og:site_name" content="OBERK, IT Blog">
+<meta property="og:description" content="0. Prerequisite Install Node.js Install Yarn (Optional) Install VSCode or Other Markdown Editor Knowledge of Markdown   1. Install hexo-cli1$ yarn global add hexo-cli # sudo npm i -g hexo-cli 2. Creat">
+<meta property="og:locale" content="en, kr">
+<meta property="og:image" content="http://oberak.github.io/2019/03/05/create-a-blog-site-using-hexo/create-repository.png">
+<meta property="og:updated_time" content="2019-03-05T04:55:06.099Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Create a Blog site using Hexo">
+<meta name="twitter:description" content="0. Prerequisite Install Node.js Install Yarn (Optional) Install VSCode or Other Markdown Editor Knowledge of Markdown   1. Install hexo-cli1$ yarn global add hexo-cli # sudo npm i -g hexo-cli 2. Creat">
+<meta name="twitter:image" content="http://oberak.github.io/2019/03/05/create-a-blog-site-using-hexo/create-repository.png">
+  
+    <link rel="alternate" href="/atom.xml" title="OBERK, IT Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">OBERK, IT Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Won Kilho&#39;s IT Blog for Programming</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://oberak.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-create-a-blog-site-using-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/05/create-a-blog-site-using-hexo/" class="article-date">
+  <time datetime="2019-03-05T01:52:37.000Z" itemprop="datePublished">2019-03-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">Hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Create a Blog site using Hexo
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="0-Prerequisite"><a href="#0-Prerequisite" class="headerlink" title="0. Prerequisite"></a>0. Prerequisite</h3><ul>
+<li>Install <a href="https://nodejs.org/en/download/package-manager/" target="_blank" rel="noopener">Node.js</a></li>
+<li>Install <a href="https://yarnpkg.com/lang/en/docs/install/" target="_blank" rel="noopener">Yarn</a> (Optional)</li>
+<li>Install <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">VSCode</a> or Other Markdown Editor</li>
+<li>Knowledge of <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">Markdown</a></li>
+</ul>
+<hr>
+<h3 id="1-Install-hexo-cli"><a href="#1-Install-hexo-cli" class="headerlink" title="1. Install hexo-cli"></a>1. Install hexo-cli</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn global add hexo-cli <span class="comment"># sudo npm i -g hexo-cli</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-Create-blog-project"><a href="#2-Create-blog-project" class="headerlink" title="2. Create blog-project"></a>2. Create blog-project</h3><ul>
+<li>Refer to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>, <a href="https://hexo.io/docs/commands.html" target="_blank" rel="noopener">Hexo Commends</a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init oberak-blog <span class="comment"># init project, use your project name</span></span><br><span class="line">$ <span class="built_in">cd</span> oberak-blog <span class="comment"># use your project-name</span></span><br><span class="line">oberak-blog$ yarn <span class="comment"># npm i</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="Project-structure"><a href="#Project-structure" class="headerlink" title="Project structure"></a>Project structure</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">. # Project root</span><br><span class="line">├─ _config.yml # config file</span><br><span class="line">├─ package.json # node config</span><br><span class="line">├─ scaffolds </span><br><span class="line">├─ source </span><br><span class="line">|  └─ _posts # posted files</span><br><span class="line">└─ themes # themes files</span><br></pre></td></tr></table></figure>
+<h3 id="3-Start-server"><a href="#3-Start-server" class="headerlink" title="3. Start server"></a>3. Start server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server <span class="comment"># in project folder</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="localhost:4000" target="_blank" rel="noopener">localhost:4000</a></li>
+</ul>
+<h3 id="4-Add-post"><a href="#4-Add-post" class="headerlink" title="4. Add post"></a>4. Add post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post <span class="string">'Hello Hexo'</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Post file created: <code>/source/_posts/Hello-Hexo.md</code> </li>
+<li>Modify the post file: <a href="https://sourceforge.net/p/hexo/wiki/markdown_syntax/" target="_blank" rel="noopener">Hexo Markdown Syntax</a><figure class="highlight markdown"><figcaption><span>/source/_posts/Hello-Hexo.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">### Hello Hexo</span></span><br><span class="line"><span class="bullet">* </span>This is First Post</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="5-Build"><a href="#5-Build" class="headerlink" title="5. Build"></a>5. Build</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Generate html files under <code>/public/</code> folder</li>
+</ul>
+<h3 id="6-Deploy-to-GitHub-Pages"><a href="#6-Deploy-to-GitHub-Pages" class="headerlink" title="6. Deploy to GitHub Pages"></a>6. Deploy to GitHub Pages</h3><h4 id="Create-GitHub-repository"><a href="#Create-GitHub-repository" class="headerlink" title="Create GitHub repository"></a>Create <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> repository</h4><ul>
+<li>Repository name: username<strong><em>.github.io</em></strong> (‘username’ is GitHub user name. It’s your blog domain)</li>
+</ul>
+<img src="/2019/03/05/create-a-blog-site-using-hexo/create-repository.png" title="Create repository">
+<ul>
+<li>Install ‘hexo-deployer-git’<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-deployer-git <span class="comment"># npm i --save hexo-deployer-git</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="Modify-config"><a href="#Modify-config" class="headerlink" title="Modify config"></a>Modify config</h4><ul>
+<li>Refer to <a href="https://hexo.io/docs/configuration.html" target="_blank" rel="noopener">Hexo Configuration</a><figure class="highlight markdown"><figcaption><span>/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Site</span></span><br><span class="line">title: OBERK, IT Blog</span><br><span class="line">subtitle: Won Kilho's IT Blog for Programming</span><br><span class="line">description: Won Kilho's IT Blog for Programming</span><br><span class="line">keywords: Odoo, Python, Java, Javascript</span><br><span class="line">author: Won Kilho</span><br><span class="line">language: en, kr</span><br><span class="line">timezone: Asia/Seoul # (https://en.wikipedia.org/wiki/List<span class="emphasis">_of_</span>tz<span class="emphasis">_database_</span>time_zones)</span><br><span class="line"></span><br><span class="line"><span class="section">#URL</span></span><br><span class="line">url: http://username.github.io/</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line"></span><br><span class="line"><span class="section"># Deployment</span></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/username/username.github.io.git</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>Use your github.com username instead of ‘username’</li>
+<li><p>Delete ‘Hello World’ post<br>delete the post file: <code>/source/_posts/hello-world.md</code><br>and clean</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>deploy to git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g --d <span class="comment"># hexo generate &amp; hexo deploy</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>Open <strong><em>username</em></strong>.github.io site on your browser(Use your github.com username.)</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ul>
+<li><a href="https://futurecreator.github.io/2016/06/14/get-started-with-hexo/" target="_blank" rel="noopener">Get Started with Hexo</a>(Korean)</li>
+<li><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></li>
+<li><a href="https://hexo.io/docs/commands.html" target="_blank" rel="noopener">Hexo Commends</a></li>
+<li><a href="https://sourceforge.net/p/hexo/wiki/markdown_syntax/" target="_blank" rel="noopener">Hexo Markdown Syntax</a></li>
+<li><a href="https://hexo.io/docs/configuration.html" target="_blank" rel="noopener">Hexo Configuration</a></li>
+</ul>
+<hr>
+<h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oberak.github.io/2019/03/05/create-a-blog-site-using-hexo/" data-id="cjsvdu3gu0000y2s2a7sjni72" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">Node.js</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/03/05/hexo-basic-usage/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hexo Basic Usage
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/">VSCode</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/blog/" style="font-size: 15px;">Blog</a> <a href="/tags/hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/vscode/" style="font-size: 10px;">VSCode</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/05/setting-vscode-for-hexo/">Setting VSCode for Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/05/hexo-basic-usage/">Hexo Basic Usage</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/05/create-a-blog-site-using-hexo/">Create a Blog site using Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Won Kilho<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
